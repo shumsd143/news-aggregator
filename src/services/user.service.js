@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const filePath = path.resolve(__dirname, "../../data/user.json");
+const filePath = path.resolve(__dirname, "../../users.json");
 
 if (!fs.existsSync(filePath)) {
   fs.writeFileSync(filePath, JSON.stringify([]));
